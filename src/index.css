@@ -1,0 +1,83 @@
+.navigation {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid black;
+  padding: 10px 0;
+  z-index: 1000; /* Ensure it stays on top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px; /* Set a fixed height for the navigation bar */
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.center-text {
+  margin-top: 5px;
+}
+
+.nav-items.left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.nav-items.right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.center-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure the image can be positioned absolutely */
+}
+
+.circle-image {
+  width: 150px; /* Set the desired width for the image */
+  height: 150px; /* Set the desired height for the image */
+  border-radius: 50%;
+  position: absolute; /* Position the image absolutely */
+  top: 60%; /* Center the image vertically */
+  transform: translateY(-30%); /* Center the image vertically */
+  border: 10px solid white; /* Add a 10px border around the image */
+  object-fit: cover; /* Ensure the image covers the area properly */
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the image */
+}
+
+.center-txt {
+  margin: 5px;
+  opacity: 0.3;
+  font-weight: bold;
+}
+
+.center-txt1 {
+  margin: 5px;
+  font-size: 24px;
+}
+
+.nav-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.nav-item:hover {
+  color: red;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background when scrolled */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow when scrolled */
+  height: 60px; /* Ensure the height remains the same when scrolled */
+}
