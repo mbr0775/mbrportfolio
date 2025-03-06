@@ -3,9 +3,11 @@ import { Link } from 'react-scroll';
 import '../index.css';
 import '@fontsource/roboto';
 import '@fontsource/montserrat';
+import { FaBars, FaTimes } from 'react-icons/fa'; // Import icons
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // State for mobile menu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,23 +22,31 @@ const Navigation = () => {
 
   return (
     <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
-      <ul className="nav-items left">
+      {/* Hamburger Icon */}
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </div>
+
+      {/* Left Nav Items */}
+      <ul className={`nav-items left ${menuOpen ? 'show' : ''}`}>
         <li className="nav-item">
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             Home
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             About
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="resume" smooth={true} duration={500}>
+          <Link to="resume" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             Resume
           </Link>
         </li>
       </ul>
+
+      {/* Center Logo or Text */}
       <div className="center-content">
         {scrolled ? (
           <>
@@ -47,24 +57,26 @@ const Navigation = () => {
           <img src={require('./mbr3.jpg')} alt="Mubassir Nasar" className="circle-image" />
         )}
       </div>
-      <ul className="nav-items right">
+
+      {/* Right Nav Items */}
+      <ul className={`nav-items right ${menuOpen ? 'show' : ''}`}>
         <li className="nav-item">
-          <Link to="portfolio" smooth={true} duration={500}>
+          <Link to="portfolio" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             Portfolio
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="blog" smooth={true} duration={500}>
+          <Link to="blog" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             Blog
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="contact" smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             Contact
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="login" smooth={true} duration={500}>
+          <Link to="login" smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             Login
           </Link>
         </li>

@@ -5,22 +5,20 @@
   background-color: white;
   border-bottom: 2px solid black;
   padding: 10px 0;
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px; /* Set a fixed height for the navigation bar */
+  height: 60px;
+  padding: 0 20px;
 }
 
+/* Navigation Items */
 .nav-items {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.center-text {
-  margin-top: 5px;
 }
 
 .nav-items.left {
@@ -31,38 +29,6 @@
 .nav-items.right {
   flex: 1;
   justify-content: flex-end;
-}
-
-.center-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative; /* Ensure the image can be positioned absolutely */
-}
-
-.circle-image {
-  width: 150px; /* Set the desired width for the image */
-  height: 150px; /* Set the desired height for the image */
-  border-radius: 50%;
-  position: absolute; /* Position the image absolutely */
-  top: 60%; /* Center the image vertically */
-  transform: translateY(-30%); /* Center the image vertically */
-  border: 10px solid white; /* Add a 10px border around the image */
-  object-fit: cover; /* Ensure the image covers the area properly */
-  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5); /* Add a shadow to the image */
-}
-
-.center-txt {
-  margin: 5px;
-  opacity: 0.3;
-  font-weight: bold;
-}
-
-.center-txt1 {
-  margin: 5px;
-  font-size: 24px;
 }
 
 .nav-item {
@@ -76,8 +42,72 @@
   color: red;
 }
 
-.scrolled {
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background when scrolled */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow when scrolled */
-  height: 60px; /* Ensure the height remains the same when scrolled */
+/* Mobile Menu */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Center Logo or Text */
+.center-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 5px solid white;
+  object-fit: cover;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navigation {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .nav-item {
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .circle-image {
+    width: 100px;
+    height: 100px;
+  }
 }
