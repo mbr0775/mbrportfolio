@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mbrportfolio/static/css/main.e53b03a6.css",
+    "main.css": "/mbrportfolio/static/css/main.377bc459.css",
     "main.js": "/mbrportfolio/static/js/main.472b7bb4.js",
     "static/js/488.bdb034bb.chunk.js": "/mbrportfolio/static/js/488.bdb034bb.chunk.js",
     "static/media/mbr4.jpg": "/mbrportfolio/static/media/mbr4.853866fb59a8342fca0c.jpg",
@@ -41,12 +41,12 @@
     "static/media/roboto-greek-ext-400-normal.woff2": "/mbrportfolio/static/media/roboto-greek-ext-400-normal.1df4abad55796d11a0c8.woff2",
     "static/media/roboto-greek-ext-400-normal.woff": "/mbrportfolio/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/mbrportfolio/index.html",
-    "main.e53b03a6.css.map": "/mbrportfolio/static/css/main.e53b03a6.css.map",
+    "main.377bc459.css.map": "/mbrportfolio/static/css/main.377bc459.css.map",
     "main.472b7bb4.js.map": "/mbrportfolio/static/js/main.472b7bb4.js.map",
     "488.bdb034bb.chunk.js.map": "/mbrportfolio/static/js/488.bdb034bb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e53b03a6.css",
+    "static/css/main.377bc459.css",
     "static/js/main.472b7bb4.js"
   ]
 }
