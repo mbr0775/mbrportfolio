@@ -65,7 +65,7 @@
   border-radius: 50%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-30%);
   border: 5px solid white;
   object-fit: cover;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
@@ -76,7 +76,7 @@
   .navigation {
     flex-wrap: wrap;
     height: auto;
-    padding: 10px;
+    padding: 20px;
   }
 
   .menu-icon {
