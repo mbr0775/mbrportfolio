@@ -1,0 +1,120 @@
+.services-container {
+  padding: 70px;
+  margin: 0 auto;
+  max-width: 1500px; /* Adjust the max-width as needed */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+}
+
+.services-heading {
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 80px; /* Add some space below the heading */
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.services-heading::after {
+  content: '';
+  display: block;
+  width: 40%; /* Adjust the width as needed */
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: -10px;
+  right: 1px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+  gap: 30px; /* Space between the cards */
+}
+
+.service-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Shadow for the card */
+  text-align: left;
+  position: relative; /* To position the icon */
+  margin-bottom: 20px; /* Add space between the cards */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+}
+
+.icon-container {
+  position: absolute;
+  top: -25px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  background-color: white; /* Background color for the icon */
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted shadow for the icon */
+}
+
+.service-card i {
+  font-size: 34px; /* Adjust the icon size as needed */
+  color: red; /* Red color for the icon */
+}
+
+.service-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 30px; /* Add space for the icon */
+  position: relative;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #555; /* Slightly darker text color */
+  margin-top: 20px; /* Add space between the title and description */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    padding: 20px; /* Reduce padding for smaller screens */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 column layout for small screens */
+    gap: 20px; /* Reduce gap between cards */
+  }
+
+  .services-heading {
+    font-size: 28px; /* Adjust heading size for smaller screens */
+    margin-bottom: 40px; /* Reduce margin for smaller screens */
+  }
+
+  .service-card {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .service-card h2 {
+    font-size: 20px; /* Adjust title size for smaller screens */
+  }
+
+  .service-card p {
+    font-size: 14px; /* Adjust description size for smaller screens */
+  }
+
+  .icon-container {
+    top: -20px; /* Adjust icon position for smaller screens */
+    left: 15px; /* Adjust icon position for smaller screens */
+  }
+
+  .service-card i {
+    font-size: 28px; /* Adjust icon size for smaller screens */
+  }
+}

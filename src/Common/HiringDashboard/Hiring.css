@@ -1,0 +1,67 @@
+.hiring-section {
+    background-color: black;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hiring-text {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px; /* Increase space below the heading */
+  }
+  
+  .hiring-description {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px; /* Increase space below the description */
+    max-width: 600px;
+  }
+  
+  .hiring-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s;
+    margin-bottom: 20px; /* Increase space below the button */
+    width: 15%;
+  }
+  
+  .hiring-button:hover {
+    transform: scale(1.1);
+    background-color: darkred;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+
+  a i {
+    font-size: 30px;
+
+  }
+  
+  .social-links a, .social-links Link {
+    color: white;
+    margin: 0 15px; /* Increase space between social links */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  .social-links a:hover, .social-links Link:hover {
+    color:red;
+
+  }
+  
+  .social-links i {
+    margin-right: 8px; /* Add space between icon and text */
+  }

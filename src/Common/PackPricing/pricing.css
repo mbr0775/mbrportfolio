@@ -1,0 +1,175 @@
+.pricing-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.pricing-heading {
+  font-size: 36px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px; /* Add some space below the heading */
+}
+
+.red-text {
+  color: red;
+  font-weight: bold;
+}
+
+.pricing-heading::after {
+  content: '';
+  display: block;
+  width: 50%; /* Adjust the width as needed */
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.category-section {
+  margin-bottom: 40px; /* Add space between categories */
+}
+
+.category-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+  gap: 20px; /* Space between the cards */
+}
+
+.pricing-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the card */
+  text-align: center; /* Center align text */
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pricing-card .price {
+  font-size: 28px;
+  color: red; /* Red color for the price */
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  font-size: 16px;
+  color: #555; /* Slightly darker text color */
+  margin-bottom: 10px;
+}
+
+.highlight {
+  border: 2px solid red; /* Highlight the exclusive package */
+}
+
+.new-label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.pricing-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+  width: 50%;
+}
+
+.pricing-button:hover {
+  transform: scale(1.05); /* Scale up the button on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Increase shadow on hover */
+}
+
+/* Styles for big and small cards */
+.pricing-card.big {
+  grid-column: span 2; /* Make the big cards span 2 columns */
+  font-size: 1.2em; /* Increase font size for big cards */
+}
+
+.pricing-card.small {
+  grid-column: span 1; /* Make the small cards span 1 column */
+  font-size: 1em; /* Default font size for small cards */
+}
+
+/* Style for the section divider */
+.section-divider {
+  border: none;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.1); /* Light gray color with less opacity */
+  margin: 40px 0; /* Space around the divider */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns layout for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr; /* 1 column layout for small screens */
+  }
+
+  .pricing-card.big {
+    grid-column: span 1; /* Make big cards span 1 column on small screens */
+  }
+
+  .pricing-heading {
+    font-size: 28px; /* Adjust heading size for smaller screens */
+  }
+
+  .category-heading {
+    font-size: 24px; /* Adjust category heading size for smaller screens */
+  }
+
+  .pricing-card h3 {
+    font-size: 20px; /* Adjust title size for smaller screens */
+  }
+
+  .pricing-card .price {
+    font-size: 24px; /* Adjust price size for smaller screens */
+  }
+
+  .pricing-card ul li {
+    font-size: 14px; /* Adjust feature size for smaller screens */
+  }
+
+  .pricing-button {
+    font-size: 14px; /* Adjust button size for smaller screens */
+  }
+}
