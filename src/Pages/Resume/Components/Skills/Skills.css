@@ -131,14 +131,21 @@
   }
   
   @media (max-width: 768px) {
+    .skills-section{ 
+      display: flex;
+    }
     .skills-container {
       grid-template-columns: 1fr;
       padding: 10px;
+      display: block;
+
     }
   
     .skills-heading {
       font-size: 30px;
       margin-bottom: 30px;
+      transform: translateY(-100px) translateX(150px);
+      
     }
   
     .skills-category {
