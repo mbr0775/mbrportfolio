@@ -150,11 +150,11 @@
     }
   
     .skills-category {
-      padding: 7px;
-      transform: translateX(-50px);
-      width: 200px;
+      padding: 5px;
+      transform: translateX(-40px);
+      width: 193px;
       padding-top: 10px;
-      margin: 10px;
+      margin: 8px;
 
     }
 
