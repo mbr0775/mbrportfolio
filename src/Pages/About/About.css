@@ -81,3 +81,14 @@
 .social-icons i:hover {
   color: darkred;
 }
+
+
+@media (max-width: 768px) {
+
+  .about-box {
+    padding: 10px;
+    transform: translateX(-50px);
+    width: 455px;
+  }
+
+}
