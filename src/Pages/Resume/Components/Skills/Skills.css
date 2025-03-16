@@ -133,7 +133,7 @@
   @media (max-width: 768px) {
     .skills-container {
       grid-template-columns: 1fr;
-      padding: 20px;
+      padding: 10px;
     }
   
     .skills-heading {
