@@ -21,23 +21,21 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
-    gap: 50px;
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 40px;
+    padding: 30px;
+
   }
   
   /* Skill Category */
   .skills-category {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
   .skills-category:hover {
-    transform: translateY(-5px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   }
   
@@ -53,7 +51,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    gap: 15px;
   }
   
   /* Skill Item */
@@ -62,6 +60,7 @@
     flex-direction: column;
     align-items: center;
     width: 140px;
+    
   }
   
   /* Circular Progress */
@@ -138,18 +137,27 @@
       grid-template-columns: 1fr;
       padding: 10px;
       display: block;
+      padding-top: 10px;
 
     }
+
   
     .skills-heading {
       font-size: 30px;
       margin-bottom: 30px;
-      transform: translateY(-100px) translateX(150px);
+      transform: translateY(-100px) translateX(110px);
       
     }
   
     .skills-category {
-      padding: 25px;
+      padding: 7px;
+      transform: translateX(-50px);
+      width: 200px;
+      padding-top: 10px;
+      margin: 10px;
+
     }
+
+
   }
   
