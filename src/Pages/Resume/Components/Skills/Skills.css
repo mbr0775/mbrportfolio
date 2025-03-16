@@ -145,13 +145,13 @@
     .skills-heading {
       font-size: 30px;
       margin-bottom: 30px;
-      transform: translateY(-100px) translateX(110px);
+      transform: translateY(-95px) translateX(125px);
       
     }
   
     .skills-category {
       padding: 5px;
-      transform: translateX(-40px);
+      transform: translateX(-30px);
       width: 193px;
       padding-top: 10px;
       margin: 8px;
